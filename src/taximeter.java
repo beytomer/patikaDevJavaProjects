@@ -7,22 +7,16 @@ public class taximeter {
 
         Scanner input = new Scanner(System.in);
         System.out.println("kilometreyi giriniz : ");
-        kl=input.nextInt();
+        kl=input.nextDouble();
 
         tUcret=(kl*sbt)+bsl;
-        boolean tmp =(tUcret > 20.0);
-        tUcret= tmp ? tUcret : 20.0;
+        tUcret=(tUcret < 20.0) ? 20.0 : tUcret;
+
 
         System.out.println("toplam maliyet : "+tUcret);
 
 
 
     }
-
-
-
-
-
-
 
 }
