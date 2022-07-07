@@ -123,7 +123,12 @@ public class AdvancedCalculator {
         a=scan.nextInt();
         System.out.print("Dikdortgenin uzun kenari : ");
         b=scan.nextInt();
-        System.out.println("Dikdortgenin Alani : "+(a*b)+"\nDikdortgenin Cevresi : "+(a+b)*2);
+        if (a<=0 || b<=0){
+            System.out.println("Dikdortgenin kenarlari sifirdan kucuk olamaz !!");
+
+        }else{
+            System.out.println("Dikdortgenin Alani : "+(a*b)+"\nDikdortgenin Cevresi : "+(a+b)*2);
+        }
     }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
