@@ -14,7 +14,6 @@ public class Main {
         boolean isWin = false;
         boolean isWrong = false;
 
-        System.out.println(number);
         while (right < 5) {
             System.out.print("Lutfen tahmininizi giriniz : ");
             selected = input.nextInt();
@@ -38,9 +37,9 @@ public class Main {
             } else {
                 System.out.println("Hatali bir sayi girdiniz !");
                 if (selected > number) {
-                    System.out.println(selected + " sayisi, gizli sayidan büyüktür.");
+                    System.out.println(selected + " sayisi, gizli sayidan buyuktur.");
                 } else {
-                    System.out.println(selected + " sayisi, gizli sayıdan kucukktur.");
+                    System.out.println(selected + " sayisi, gizli sayidan kucukktur.");
                 }
 
                 wrong[right++] = selected;
